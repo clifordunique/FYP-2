@@ -256,7 +256,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5125546230758293509}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -298,6 +298,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   speedMod: 1
+  fallMultiplier: 2.5
   speedLevel: 0
   rangedLevel: 0
   attackLevel: 0
@@ -326,7 +327,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5125546230758293509}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GolemController : Enemy
+public class GolemController : GroundEnemy
 {
 
     public int GolemHealth;
@@ -10,8 +10,6 @@ public class GolemController : Enemy
     public float GolemRange;
     public float GolemAttackRange;
     public int GolemDamage;
-    public Transform attackPos;
-    public LayerMask layerPlayer;
 
     //attack
     private float timeBtwAttack;
@@ -22,60 +20,31 @@ public class GolemController : Enemy
     // Start is called before the first frame update
     void Awake()
     {
-        rigidbody2d = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
         health = GolemHealth;
         speed = GolemSpeed;
-        timeBtwAttack = 0;
-        golemTimeBtwAttack = 1.95f;
         damage = GolemDamage;
 
+        rigidbody2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        timeBtwAttack = 0;
+        golemTimeBtwAttack = 1.95f;
+        
+
     }
-    private void Start()
-    {
-        playerLocation = GameObject.FindGameObjectWithTag("Player").transform;
-    }
+
 
     // Update is called once per frame
     void Update()
-    {       
+    {
+        LookAtPlayer();
         //Debug.Log(staggered);
         //health > 0 so it will not trace when it is dead
-        if (timeBtwAttack <= 0) {
-            if ((playerLocation != null) && (health > 0))
-            {
-                LookAtPlayer();
-                //TracePlayer(GolemRange, speed, playerLocation.position, transform.position);
+        GroundTraceAndAttackPlayer(GolemRange, GolemSpeed, playerLocation.position);
 
-                if (Vector2.Distance(transform.position, playerLocation.position) > GolemRange)
-                {
-                    animator.SetBool("Moving", true);
-                    transform.position = Vector2.MoveTowards(transform.position, playerLocation.position, GolemSpeed * Time.deltaTime);
-                }
-                else if (Vector2.Distance(transform.position, playerLocation.position) <= GolemRange)
-                {
-                    animator.SetBool("Moving", false);
 
-                    //attack
-                    animator.SetTrigger("Attack");
-
-                    StartCoroutine(GolemHit());
-
-                    Debug.Log("Not moving");
-                    timeBtwAttack = golemTimeBtwAttack;
-                }
-
-            }
-            }
-            else
-            {
-                animator.SetBool("Moving", false);
-                timeBtwAttack -= Time.deltaTime;
-                //Debug.Log("time");
-            }
         if (staggered == true)
         {
-            //StopCoroutine(GolemHit());
+            //Used to stop the damage from going through even though the animation is cut off by the hurt animation
             StopAllCoroutines();
             Debug.Log("coroutine STOPPED");
         }
@@ -86,23 +55,29 @@ public class GolemController : Enemy
             OnDeath();
         }
     }
-    IEnumerator GolemHit()
-    {
-        //~10/12 second calculated from the frame of the golem swinging his fists
-        yield return new WaitForSeconds(1.3f);
 
-        Collider2D playerToDamage = Physics2D.OverlapCircle(attackPos.position, GolemAttackRange, layerPlayer);
-        if (playerToDamage != null)
-        {
-            DamagePlayer(playerToDamage);
-        }
+    override public void Attack()
+    {
+        if(!attacking)
+        StartCoroutine(Hit(golemTimeBtwAttack, GolemRange));
 
     }
     void OnDrawGizmosSelected()
     {
-
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPos.position, GolemAttackRange);
     }
 
 }
+//IEnumerator GolemHit()
+//{
+//    //~10/12 second calculated from the frame of the golem swinging his fists
+//    yield return new WaitForSeconds(1.3f);
+
+//    Collider2D playerToDamage = Physics2D.OverlapCircle(attackPos.position, GolemAttackRange, layerPlayer);
+//    if (playerToDamage != null)
+//    {
+//        DamagePlayer(playerToDamage);
+//    }
+
+//}

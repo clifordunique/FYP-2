@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
 
     //speed modifier for different speed when in different actions(attack,shooting etc.)
     public float speedMod = 1;
+    public float fallMultiplier = 2.5f;       //makes falling more natural
 
     //AttackTimer
     private float timeBtwAttack;
@@ -83,7 +84,7 @@ public class PlayerController : MonoBehaviour
         speed = baseSpeed;
         speedLevel = 0;
 
-        currentAnim = "No Animation";
+        //currentAnim = "No Animation";
 
         if (UnityService == null)
         {
@@ -96,7 +97,7 @@ public class PlayerController : MonoBehaviour
     {
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, layerGround);
         animator.SetBool("Grounded", grounded);
-        Debug.Log(currentAnim);
+        //Debug.Log(currentAnim);
 
         //checking if the player is in an animation(r.g. attacking)
         bool InAction = attacking || shooting;
@@ -110,47 +111,19 @@ public class PlayerController : MonoBehaviour
         float inputX = UnityService.GetAxis("Horizontal");
 
         // Swap direction of sprite depending on walk direction
-
-        if (inputX > 0)
-            transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
-        else if (inputX < 0)
-        {
-            transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        if (!InAction) {
+            ChangeLookDirection(inputX);
         }
-        // Move
+        
+        Move(inputX);
+    
 
-        //if (attacking)
-        //{
-        //    body2d.velocity = new Vector2(inputX * speed * 0.2f, body2d.velocity.y);
-        //}
-        //else if (shooting)
-        //{
-        //    body2d.velocity = new Vector2(0, body2d.velocity.y);
-        //}
-        //tbc else was originally used, causes probelm cause it makes the velocity if
-        //else
-        if (inputX != 0)
+        if (body2d.velocity.y < 0)
         {
-            body2d.velocity = new Vector2(inputX * speed * speedMod, body2d.velocity.y);
+            body2d.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
-
-
-        // Old method, does not allow for more in depth settings for e.g. stopping movement while shooting arrow
-        //if (timeBtwAttack <= 0)
-        //{
-        //    body2d.velocity = new Vector2(inputX * speed, body2d.velocity.y);
-        //}
-        //else
-        //{
-        //    //speed 
-        //    body2d.velocity = new Vector2(inputX * 0.5f, body2d.velocity.y);
-        //}
-
-
-
 
         //Attack
-        //of (timeBtwAttack <= 0)
         if (!InAction)
         {
             //without unityServiceL Input.GetKeyDown(KeyCode.K)
@@ -280,8 +253,11 @@ public class PlayerController : MonoBehaviour
     public void ChangeHealth(int amount)
     {
         health += amount;
+        if(UIHealth.Instance!=null)
         UIHealth.Instance.SetValue(health / (float)maxHealth);
     }
+
+    
 
     //attack moves
     public void Attack()
@@ -351,7 +327,6 @@ public class PlayerController : MonoBehaviour
     }
     public void ChangeSpeed(float speedChange)
     {
-
         speed += speedChange;
     }
 
@@ -403,5 +378,18 @@ public class PlayerController : MonoBehaviour
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(basicHit2Pos.position, basicHit2Range, layerEnemies);
         MeleeHit(enemiesToDamage);
 
+    }
+    public void ChangeLookDirection(float inputX)
+    {
+        if (inputX > 0)
+            transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        else if (inputX < 0)
+        {
+            transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        }
+    }
+    public void Move(float inputX)
+    {
+            body2d.velocity = new Vector2(inputX * speed * speedMod, body2d.velocity.y);
     }
 }

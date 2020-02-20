@@ -4,6 +4,7 @@ using UnityEngine;
 
 public static class Spawner
 {
+    //Characters
     public static GameObject SpawnPlayer()
     {
         return MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/Player"));
@@ -21,16 +22,7 @@ public static class Spawner
         return MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/Golem"), new Vector3(x, y), Quaternion.identity);
     }
 
-    public static GameObject SpawnTestGolem()
-    {
-        return MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/TestGolem"));
-    }
-    public static GameObject SpawnTestGolem(float x, float y)
-    {
-        return MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/TestGolem"), new Vector3(x, y), Quaternion.identity);
-    }
-
-    //environment
+    //Environment
     public static GameObject SpawnChest()
     {
         return MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/Chest"));
@@ -45,7 +37,7 @@ public static class Spawner
     {
         return MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/Grid"));
     }
-    public static GameObject SetUpTestStage(float x, float y)
+    public static GameObject SetUpStage1(float x, float y)
     {
         return MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/Stage/Stage1/Grassland"), new Vector3(x, y), Quaternion.identity);
     }
@@ -66,6 +58,29 @@ public static class Spawner
     public static GameObject SpawnScroll()
     {
         return MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/Items/Scroll"));
+    }
+    //UI
+    public static GameObject SpawnUI()
+    {
+        return MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/UI/UI"));
+    }
+
+
+
+    //Testing
+    public static GameObject SpawnMockEnemy()
+    {
+        return MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/UsedForTesting/MockEnemy"));
+    }
+    public static GameObject SpawnMockEnemy(float x, float y)
+    {
+        return MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/UsedForTesting/MockEnemy"), new Vector3(x, y), Quaternion.identity);
+    }
+
+    public static GameObject SetUpTestStage(float x, float y)
+    {
+        //The testStage is 50 Units long from (-25,0) to (25,0)
+        return MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefabs/Stage/Stage1/Grassland"), new Vector3(x, y), Quaternion.identity);
     }
 
 }

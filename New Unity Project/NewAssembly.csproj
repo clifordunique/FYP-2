@@ -64,14 +64,18 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Arrow.cs" />
     <Compile Include="Assets\Scripts\Background\Parallax.cs" />
-    <Compile Include="Assets\Scripts\Behaviour Scripts\GolemIdleBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Behaviour Scripts\GeneralEnemy\StaggeredBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Behaviour Scripts\Golem\GolemIdleBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\PlayerBasicHit1Behaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\PlayerBasicHit2Behaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\PlayerIdleBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\PlayerJumpAttack1Behaviour.cs" />
+    <Compile Include="Assets\Scripts\Behaviour Scripts\PlayerRunBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\PlayerShootingBehaviour.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\GolemController.cs" />
+    <Compile Include="Assets\Scripts\Enemy\GroundEnemy.cs" />
+    <Compile Include="Assets\Scripts\Enemy\MockEnemyController.cs" />
     <Compile Include="Assets\Scripts\GameManagement\GameManager.cs" />
     <Compile Include="Assets\Scripts\GameManagement\LevelManager.cs" />
     <Compile Include="Assets\Scripts\GameManagement\Loader.cs" />
@@ -84,7 +88,6 @@
     <Compile Include="Assets\Scripts\Level\SpawnObject.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\TestGolem.cs" />
     <Compile Include="Assets\Scripts\UIScript\UIHealth.cs" />
     <Compile Include="Assets\Scripts\UIScript\UIHeathText.cs" />
     <Reference Include="Unity.TextMeshPro">

@@ -4,27 +4,43 @@ using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour
 {
-    public int health;
-    [System.NonSerialized] public float speed;
     protected Rigidbody2D rigidbody2d;
     protected Animator animator;
     protected Transform playerLocation;
+
+    public int damage;
+    public float speed;
+    public int health;
+    public bool canBeStaggered;
+
+    //for attack
+    public LayerMask layerPlayer;
+    public Transform attackPos;             //for melee attacks
+
+    public bool attacking;
     public bool staggered;
-    [System.NonSerialized] public int damage;
 
     void Start()
     {
+        attacking = false;
+        playerLocation = GameObject.FindGameObjectWithTag("Player").transform;
         staggered = false;
+        Debug.Log("HELLO" + playerLocation);
     }
-    
 
+    //public abstract void Attack();
+    //public abstract void TracePlayer();
+    
     //This is important as it allows AttackEnemy() to get health component from <Enemy> instead of checking for enemy type first
-    public void TakeDamage(int damage)
+    public virtual void TakeDamage(int damage)
     {
         //maybe can be used for different enemies? 
-        animator.SetTrigger("Hurt");
+        if (canBeStaggered)
+        {
+            animator.SetTrigger("Hurt");
+        }
+        
         health -= damage;
-        staggered = true;
     }
 
     public void DamagePlayer(Collider2D player)
@@ -40,8 +56,8 @@ public abstract class Enemy : MonoBehaviour
         }
     }
 
-        public void LookAtPlayer()
-    {
+        protected void LookAtPlayer()
+        {
         if (transform.position.x > playerLocation.position.x)
         {
             transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
@@ -51,6 +67,16 @@ public abstract class Enemy : MonoBehaviour
             transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
         }
     }
+    //Grounded enemies which move towards the player til the enemy is at a certain range(determined by the enemy's attack range)
+    //https://answers.unity.com/questions/1084574/vector3movetowards-on-y-axis-only-c.html
+    public void MoveTowardsPlayersGrounded(float range)
+    {
+        if (Mathf.Abs(transform.position.x - playerLocation.position.x) > range)
+        {
+
+        }
+    }
+
 
 
     protected void Destroy()
@@ -76,20 +102,7 @@ public abstract class Enemy : MonoBehaviour
 
 
 
-    //To be deleted
-    public void TracePlayer(float range, float speed, Vector3 target, Vector3 enemy)
-    {
-        if (Vector2.Distance(enemy, target) > range)
-        {
-            animator.SetBool("Moving", true);
-            transform.position = Vector2.MoveTowards(enemy, target, speed * Time.deltaTime);
-            //Debug.Log("Moving");
-        }
-        else
-        {
-            animator.SetBool("Moving", false);
-            //attackplayer
-            Debug.Log("Not moving");
-        }
-    }
+
+    
+
 }

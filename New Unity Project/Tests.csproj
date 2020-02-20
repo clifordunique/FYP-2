@@ -63,11 +63,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Tests\ChestTest.cs" />
+    <Compile Include="Assets\Tests\EnemyTests.cs" />
+    <Compile Include="Assets\Tests\EnemyTestsNoSetup.cs" />
     <Compile Include="Assets\Tests\GameTest.cs" />
     <Compile Include="Assets\Tests\GolemPlayerTestsWithSetUp.cs" />
-    <Compile Include="Assets\Tests\GolemTests.cs" />
+    <Compile Include="Assets\Tests\PlayerGroundSensorTests.cs" />
     <Compile Include="Assets\Tests\PlayerTestInAir.cs" />
-    <Compile Include="Assets\Tests\PlayerTests.cs" />
     <Compile Include="Assets\Tests\PlayerTestsWithSetUp.cs" />
     <Compile Include="Assets\Tests\ProjectileTest.cs" />
     <Compile Include="Assets\Tests\Spawner.cs" />

@@ -20,14 +20,12 @@ namespace Tests
         private PlayerController player;
         private GameObject testStage;
 
-        private Animator animator;
 
         [SetUp]
         public void Setup()
         {
             playerObject = Spawner.SpawnPlayer(0,1.5f);
             player = playerObject.GetComponent<PlayerController>();
-            animator = playerObject.GetComponent<Animator>();
             testStage = Spawner.SetUpTestStage(0,0);
             
         }
@@ -39,6 +37,15 @@ namespace Tests
         }
 
         // A Test behaves as an ordinary method
+        [UnityTest]
+        public IEnumerator PlayerMovingNew()
+        {
+            var originalX = player.transform.position.x;
+            player.Move(1);
+            yield return new WaitForSeconds(2.0f);
+
+            Assert.Greater(player.transform.position.x, originalX);
+        }
         [UnityTest]
         public IEnumerator PlayerMovingRight()
         {
@@ -81,17 +88,27 @@ namespace Tests
             //2 seconds ensures that the player is now on the ground
             yield return new WaitForSeconds(2.0f);
             Assert.IsTrue(player.grounded);
+
             player.Jump();
             yield return null;
-            //When the player jump, a force should be applied that would make the player move in the y direction
-            var y = player.GetComponent<Rigidbody2D>().velocity.y;
+            //When the player jump, a force should be applied that would make the player move(upwards) in the y direction
+            var upwardsVelocity = player.GetComponent<Rigidbody2D>().velocity.y;
 
-            Assert.Greater(y, Mathf.Epsilon);
+            Assert.Greater(upwardsVelocity, Mathf.Epsilon);
         }
 
         //case for in the air done in PlayerTests
 
         //Attack
+        //[UnityTest]
+        //public IEnumerator PlayerMeleeAttack()
+        //{
+        //    Enemy enemy;
+        //    player.MeleeHit(enemy)
+        //}
+
+
+
         [UnityTest]
         public IEnumerator PlayerAttAnimationGround()
         {

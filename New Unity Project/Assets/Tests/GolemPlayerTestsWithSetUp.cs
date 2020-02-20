@@ -54,12 +54,12 @@ namespace Tests
         [UnityTest]
         public IEnumerator GolemTakingDamage()
         {
-            var originalHealth = golemController.health;
+            var originalGolemHealth = golemController.health;
             golemController.TakeDamage(1);
             yield return null;
             var updatedHealth = golemController.health;
 
-            Assert.AreEqual(originalHealth - 1, updatedHealth);
+            Assert.AreEqual(originalGolemHealth - 1, updatedHealth);
             
         }
 
