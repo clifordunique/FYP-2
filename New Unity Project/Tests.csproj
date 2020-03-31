@@ -62,18 +62,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Tests\ChestTest.cs" />
-    <Compile Include="Assets\Tests\EnemyTests.cs" />
-    <Compile Include="Assets\Tests\EnemyTestsNoSetup.cs" />
-    <Compile Include="Assets\Tests\GameTest.cs" />
-    <Compile Include="Assets\Tests\GolemPlayerTestsWithSetUp.cs" />
-    <Compile Include="Assets\Tests\PlayerGroundSensorTests.cs" />
-    <Compile Include="Assets\Tests\PlayerTestInAir.cs" />
-    <Compile Include="Assets\Tests\PlayerTestsWithSetUp.cs" />
-    <Compile Include="Assets\Tests\ProjectileTest.cs" />
-    <Compile Include="Assets\Tests\Spawner.cs" />
-    <Compile Include="Assets\Tests\TestUtils.cs" />
-    <Compile Include="Assets\Tests\UITest\UIHearthTest.cs" />
+    <Compile Include="Assets\Tests\PlayModeTests\ChestTest.cs" />
+    <Compile Include="Assets\Tests\PlayModeTests\EnemyTests.cs" />
+    <Compile Include="Assets\Tests\PlayModeTests\GameTest.cs" />
+    <Compile Include="Assets\Tests\PlayModeTests\PlayerGroundSensorTests.cs" />
+    <Compile Include="Assets\Tests\PlayModeTests\PlayerTestInAir.cs" />
+    <Compile Include="Assets\Tests\PlayModeTests\PlayerTests.cs" />
+    <Compile Include="Assets\Tests\PlayModeTests\ProjectileTest.cs" />
+    <Compile Include="Assets\Tests\PlayModeTests\Spawner.cs" />
+    <Compile Include="Assets\Tests\PlayModeTests\TestUtils.cs" />
+    <Compile Include="Assets\Tests\PlayModeTests\UITest\UIHearthTest.cs" />
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.14f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>

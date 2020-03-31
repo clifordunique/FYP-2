@@ -10,7 +10,7 @@ public class PlayerShootingBehaviour : StateMachineBehaviour
         PlayerController player = animator.GetComponent<PlayerController>();
         player.shooting = true;
         player.currentAnim = "shooting";
-        player.speedMod = 0.1f;
+        player.speedMod = player.rangedSpeedModValue;
 
     }
 
@@ -25,7 +25,7 @@ public class PlayerShootingBehaviour : StateMachineBehaviour
     {
         PlayerController player = animator.GetComponent<PlayerController>();
         player.shooting = false;
-        player.speedMod = 1;
+        player.speedMod = player.defaultSpeedModValue;
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

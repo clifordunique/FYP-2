@@ -12,6 +12,7 @@ TagManager:
   - Bow
   - Projectile
   - Arrow
+  - NecromancerProjectile
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Interactable
   - Enemies
   - Player
-  - 
+  - EnemiesProjectile
   - 
   - 
   - 

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,27 +7,25 @@ public abstract class Enemy : MonoBehaviour
 {
     protected Rigidbody2D rigidbody2d;
     protected Animator animator;
-    protected Transform playerLocation;
+    protected Transform playerTransform;
+
+    public GameObject Chest;
 
     public int damage;
     public float speed;
     public int health;
+    public float dropRate;
     public bool canBeStaggered;
+
+    
 
     //for attack
     public LayerMask layerPlayer;
-    public Transform attackPos;             //for melee attacks
+    
 
     public bool attacking;
     public bool staggered;
 
-    void Start()
-    {
-        attacking = false;
-        playerLocation = GameObject.FindGameObjectWithTag("Player").transform;
-        staggered = false;
-        Debug.Log("HELLO" + playerLocation);
-    }
 
     //public abstract void Attack();
     //public abstract void TracePlayer();
@@ -34,31 +33,24 @@ public abstract class Enemy : MonoBehaviour
     //This is important as it allows AttackEnemy() to get health component from <Enemy> instead of checking for enemy type first
     public virtual void TakeDamage(int damage)
     {
-        //maybe can be used for different enemies? 
-        if (canBeStaggered)
+        if (canBeStaggered == true)
         {
             animator.SetTrigger("Hurt");
-        }
-        
+        }       
         health -= damage;
     }
 
     public void DamagePlayer(Collider2D player)
     {
-        Debug.Log(staggered);
-        if (player.GetComponent<PlayerController>() != null && staggered != true)
+        if (player.GetComponent<PlayerController>() != null)
         {
             player.GetComponent<PlayerController>().TakingDamage(damage);
-        }
-        else if (staggered == true && player.GetComponent<PlayerController>() != null)
-        {
-            Debug.Log("cannot attack because staggered");
         }
     }
 
         protected void LookAtPlayer()
         {
-        if (transform.position.x > playerLocation.position.x)
+        if (transform.position.x > playerTransform.position.x)
         {
             transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
         }
@@ -71,12 +63,24 @@ public abstract class Enemy : MonoBehaviour
     //https://answers.unity.com/questions/1084574/vector3movetowards-on-y-axis-only-c.html
     public void MoveTowardsPlayersGrounded(float range)
     {
-        if (Mathf.Abs(transform.position.x - playerLocation.position.x) > range)
+        if (Mathf.Abs(transform.position.x - playerTransform.position.x) > range)
         {
 
         }
     }
+    //enemy should move slower when running away from the player so the player can catch up easier
+    public readonly float backwardsSpeedMod = 0.6f;
 
+    public abstract void Attack();
+
+    protected void MoveTowardsPlayer()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, new Vector2(playerTransform.position.x, transform.position.y), speed * Time.deltaTime);
+    }
+    protected void MoveAwayFromPlayer()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, new Vector2(playerTransform.position.x, transform.position.y), -backwardsSpeedMod * speed * Time.deltaTime);
+    }
 
 
     protected void Destroy()
@@ -84,8 +88,10 @@ public abstract class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    protected void OnDeath() {
+    public void OnDeath() {
+
         animator.SetTrigger("Death");
+        Drop();
 
         //so it does get hit more
         Destroy(GetComponent<BoxCollider2D>());
@@ -95,14 +101,27 @@ public abstract class Enemy : MonoBehaviour
 
         //so it does not trigger it over and over again
         health = -1;
+
         Invoke("Destroy", 5.0f);
     }
 
+    //used in tests
+    public float GetLookDirection()
+    {
+        return transform.localScale.x;
+    }
 
+    public Vector3 GetPosition()
+    {
+        return transform.position;
+    }
 
-
-
-
-    
-
+    public void Drop()
+    {
+        float randomValue = UnityEngine.Random.value;
+        if (randomValue <= dropRate)
+        {
+            Instantiate(Chest, rigidbody2d.position - Vector2.up * 1f, Quaternion.identity);
+        }
+    }
 }

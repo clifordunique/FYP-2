@@ -8,6 +8,29 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PixelRect:
+    serializedVersion: 2
+    x: 716.8
+    y: 171.2
+    width: 701.60004
+    height: 574.4
+  m_ShowMode: 0
+  m_Title: 
+  m_RootView: {fileID: 4}
+  m_MinSize: {x: 100, y: 120}
+  m_MaxSize: {x: 4000, y: 4020}
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -20,10 +43,88 @@ MonoBehaviour:
     height: 780.8
   m_ShowMode: 4
   m_Title: 
-  m_RootView: {fileID: 2}
+  m_RootView: {fileID: 6}
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
---- !u!114 &2
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 702
+    height: 575
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 3}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 702
+    height: 575
+  m_MinSize: {x: 100, y: 120}
+  m_MaxSize: {x: 4000, y: 4020}
+  vertical: 0
+  controlID: 1543
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 202
+    y: 0
+    width: 1054
+    height: 454
+  m_MinSize: {x: 104, y: 122}
+  m_MaxSize: {x: 4004, y: 4022}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 17}
+  - {fileID: 18}
+  - {fileID: 20}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36,9 +137,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 3}
-  - {fileID: 5}
-  - {fileID: 4}
+  - {fileID: 7}
+  - {fileID: 9}
+  - {fileID: 8}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -47,7 +148,7 @@ MonoBehaviour:
     height: 781
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
---- !u!114 &3
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -69,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &4
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,7 +191,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &5
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,7 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 6}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -113,8 +214,8 @@ MonoBehaviour:
   m_MinSize: {x: 583, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 1
-  controlID: 49
---- !u!114 &6
+  controlID: 22
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,8 +228,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 7}
-  - {fileID: 12}
+  - {fileID: 11}
+  - {fileID: 15}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -138,8 +239,8 @@ MonoBehaviour:
   m_MinSize: {x: 583, y: 494}
   m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 50
---- !u!114 &7
+  controlID: 23
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -152,19 +253,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 8}
-  - {fileID: 11}
+  - {fileID: 12}
+  - {fileID: 14}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1257
+    width: 1256
     height: 731
   m_MinSize: {x: 306, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 124
---- !u!114 &8
+  controlID: 24
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -177,19 +278,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 9}
-  - {fileID: 10}
+  - {fileID: 13}
+  - {fileID: 5}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1257
+    width: 1256
     height: 454
   m_MinSize: {x: 306, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 125
---- !u!114 &9
+  controlID: 25
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -206,44 +307,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 219
+    width: 202
     height: 454
   m_MinSize: {x: 202, y: 222}
   m_MaxSize: {x: 4002, y: 4022}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 19}
   m_Panes:
-  - {fileID: 14}
+  - {fileID: 19}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &10
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 219
-    y: 0
-    width: 1038
-    height: 454
-  m_MinSize: {x: 104, y: 122}
-  m_MaxSize: {x: 4004, y: 4022}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 13}
-  - {fileID: 15}
-  - {fileID: 16}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &11
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,16 +333,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 454
-    width: 1257
+    width: 1256
     height: 277
   m_MinSize: {x: 232, y: 272}
   m_MaxSize: {x: 10002, y: 10022}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 21}
   m_Panes:
-  - {fileID: 17}
+  - {fileID: 21}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &12
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,19 +357,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1257
+    x: 1256
     y: 0
-    width: 279
+    width: 280
     height: 731
   m_MinSize: {x: 277, y: 72}
   m_MaxSize: {x: 4002, y: 4022}
-  m_ActualView: {fileID: 18}
+  m_ActualView: {fileID: 22}
   m_Panes:
-  - {fileID: 18}
-  - {fileID: 19}
+  - {fileID: 22}
+  - {fileID: 23}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &13
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -305,110 +378,1324 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
-      type: 0}
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 219.2
-    y: 73.6
-    width: 1036
-    height: 435
+    x: 716.8
+    y: 171.2
+    width: 702
+    height: 554
   m_ViewDataDictionary: {fileID: 0}
-  m_VSyncEnabled: 0
-  m_MaximizeOnPlay: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_TargetDisplay: 0
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -518
-    m_HBaseRangeMax: 518
-    m_VBaseRangeMin: -209
-    m_VBaseRangeMax: 209
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 17
-      width: 1036
-      height: 418
-    m_Scale: {x: 1.1767837, y: 1.1767837}
-    m_Translation: {x: 518, y: 209}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -440.18286
-      y: -177.60274
-      width: 880.3657
-      height: 355.20547
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_TargetTexture: {fileID: 0}
-  m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1036, y: 435}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 00000000000000000000
-  m_XRRenderMode: 0
---- !u!114 &14
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Hierarchy
-    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 73.6
-    width: 219
-    height: 435
-  m_ViewDataDictionary: {fileID: 0}
-  m_SceneHierarchy:
-    m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 60270000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 8efbffff
+  m_TestTypeToolbarIndex: 0
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 16}
+    newResultList:
+    - id: 1000
+      uniqueId: '[New Unity Project][suite]'
+      name: New Unity Project
+      fullName: New Unity Project
+      resultStatus: 1
+      duration: 0.3696016
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1074
+      uniqueId: '[D:/FYP/New Unity Project/Library/ScriptAssemblies/Tests.dll][suite]'
+      name: Tests.dll
+      fullName: D:/FYP/New Unity Project/Library/ScriptAssemblies/Tests.dll
+      resultStatus: 1
+      duration: 0.256588
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[New Unity Project][suite]'
+    - id: 1075
+      uniqueId: Tests.dll/[Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 1
+      duration: 0.2101645
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1074
+      parentUniqueId: '[D:/FYP/New Unity Project/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1001
+      uniqueId: Tests.dll/Tests/[Tests][Tests.ChestTest][suite]
+      name: ChestTest
+      fullName: Tests.ChestTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1075
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1003
+      uniqueId: Tests.dll/Tests/ChestTest/[Tests][Tests.ChestTest.ChestClosedByDefault]
+      name: ChestClosedByDefault
+      fullName: Tests.ChestTest.ChestClosedByDefault
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ChestTest][suite]
+    - id: 1007
+      uniqueId: Tests.dll/Tests/ChestTest/[Tests][Tests.ChestTest.ChestDisappearing]
+      name: ChestDisappearing
+      fullName: Tests.ChestTest.ChestDisappearing
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ChestTest][suite]
+    - id: 1008
+      uniqueId: Tests.dll/Tests/ChestTest/[Tests][Tests.ChestTest.ChestItemAppearing]
+      name: ChestItemAppearing
+      fullName: Tests.ChestTest.ChestItemAppearing
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ChestTest][suite]
+    - id: 1006
+      uniqueId: Tests.dll/Tests/ChestTest/[Tests][Tests.ChestTest.ChestNotOpeningOnCollisionWithNonPlayer]
+      name: ChestNotOpeningOnCollisionWithNonPlayer
+      fullName: Tests.ChestTest.ChestNotOpeningOnCollisionWithNonPlayer
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ChestTest][suite]
+    - id: 1005
+      uniqueId: Tests.dll/Tests/ChestTest/[Tests][Tests.ChestTest.ChestOpeningOnceOnlyOnCollisionWithPlayer]
+      name: ChestOpeningOnceOnlyOnCollisionWithPlayer
+      fullName: Tests.ChestTest.ChestOpeningOnceOnlyOnCollisionWithPlayer
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ChestTest][suite]
+    - id: 1004
+      uniqueId: Tests.dll/Tests/ChestTest/[Tests][Tests.ChestTest.ChestOpeningOnCollisionWithPlayer]
+      name: ChestOpeningOnCollisionWithPlayer
+      fullName: Tests.ChestTest.ChestOpeningOnCollisionWithPlayer
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ChestTest][suite]
+    - id: 1002
+      uniqueId: Tests.dll/Tests/ChestTest/[Tests][Tests.ChestTest.ChestPrefabSpawn]
+      name: ChestPrefabSpawn
+      fullName: Tests.ChestTest.ChestPrefabSpawn
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ChestTest][suite]
+    - id: 1009
+      uniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+      name: EnemyTests
+      fullName: Tests.EnemyTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1075
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1010
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._01TakingDamage]
+      name: _01TakingDamage
+      fullName: Tests.EnemyTests._01TakingDamage
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1011
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._02DamagePlayer]
+      name: _02DamagePlayer
+      fullName: Tests.EnemyTests._02DamagePlayer
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1012
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._03EnemyDeath]
+      name: _03EnemyDeath
+      fullName: Tests.EnemyTests._03EnemyDeath
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1013
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._04LookingAtPlayer]
+      name: _04LookingAtPlayer
+      fullName: Tests.EnemyTests._04LookingAtPlayer
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1014
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._05MeleeMoveTowardsPlayerAtCorrectSpeed]
+      name: _05MeleeMoveTowardsPlayerAtCorrectSpeed
+      fullName: Tests.EnemyTests._05MeleeMoveTowardsPlayerAtCorrectSpeed
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1015
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._06StopMovingWhenInRange]
+      name: _06StopMovingWhenInRange
+      fullName: Tests.EnemyTests._06StopMovingWhenInRange
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1016
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._07MeleeCheckForPlayerInFront]
+      name: _07MeleeCheckForPlayerInFront
+      fullName: Tests.EnemyTests._07MeleeCheckForPlayerInFront
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1017
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._08RangedMoveTowardsFromPlayerAtCorrectSpeed]
+      name: _08RangedMoveTowardsFromPlayerAtCorrectSpeed
+      fullName: Tests.EnemyTests._08RangedMoveTowardsFromPlayerAtCorrectSpeed
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1018
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._09RangedMoveAwayFromPlayerAtCorrectSpeed]
+      name: _09RangedMoveAwayFromPlayerAtCorrectSpeed
+      fullName: Tests.EnemyTests._09RangedMoveAwayFromPlayerAtCorrectSpeed
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1025
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._108StaggeredWhenHit]
+      name: _108StaggeredWhenHit
+      fullName: Tests.EnemyTests._108StaggeredWhenHit
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1026
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._109CannotBeStaggeredWhenHit]
+      name: _109CannotBeStaggeredWhenHit
+      fullName: Tests.EnemyTests._109CannotBeStaggeredWhenHit
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1019
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._10RangedEnemyShootProjectile]
+      name: _10RangedEnemyShootProjectile
+      fullName: Tests.EnemyTests._10RangedEnemyShootProjectile
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1020
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._11RangedEnemyProjectileHasCorrectLocalScaleRight]
+      name: _11RangedEnemyProjectileHasCorrectLocalScaleRight
+      fullName: Tests.EnemyTests._11RangedEnemyProjectileHasCorrectLocalScaleRight
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1021
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._12RangedEnemyProjectileHasCorrectLocalScaleLeft]
+      name: _12RangedEnemyProjectileHasCorrectLocalScaleLeft
+      fullName: Tests.EnemyTests._12RangedEnemyProjectileHasCorrectLocalScaleLeft
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1023
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._13EnemiesCanDropChest]
+      name: _13EnemiesCanDropChest
+      fullName: Tests.EnemyTests._13EnemiesCanDropChest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1022
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests._13RangedEnemyProjectileDisappearsWhenFar]
+      name: _13RangedEnemyProjectileDisappearsWhenFar
+      fullName: Tests.EnemyTests._13RangedEnemyProjectileDisappearsWhenFar
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1024
+      uniqueId: Tests.dll/Tests/EnemyTests/[Tests][Tests.EnemyTests.AttackWhenInRange]
+      name: AttackWhenInRange
+      fullName: Tests.EnemyTests.AttackWhenInRange
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1009
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.EnemyTests][suite]
+    - id: 1027
+      uniqueId: Tests.dll/Tests/[Tests][Tests.GameTest][suite]
+      name: GameTest
+      fullName: Tests.GameTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1075
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1028
+      uniqueId: Tests.dll/Tests/GameTest/[Tests][Tests.GameTest.GameTestSimplePasses]
+      name: GameTestSimplePasses
+      fullName: Tests.GameTest.GameTestSimplePasses
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1027
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.GameTest][suite]
+    - id: 1029
+      uniqueId: Tests.dll/Tests/GameTest/[Tests][Tests.GameTest.GameTestWithEnumeratorPasses]
+      name: GameTestWithEnumeratorPasses
+      fullName: Tests.GameTest.GameTestWithEnumeratorPasses
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1027
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.GameTest][suite]
+    - id: 1030
+      uniqueId: Tests.dll/Tests/[Tests][Tests.PlayerGroundSensorTests][suite]
+      name: PlayerGroundSensorTests
+      fullName: Tests.PlayerGroundSensorTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1075
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1031
+      uniqueId: Tests.dll/Tests/PlayerGroundSensorTests/[Tests][Tests.PlayerGroundSensorTests._01GroundedIsFalseWhenPlayerInAir]
+      name: _01GroundedIsFalseWhenPlayerInAir
+      fullName: Tests.PlayerGroundSensorTests._01GroundedIsFalseWhenPlayerInAir
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerGroundSensorTests][suite]
+    - id: 1032
+      uniqueId: Tests.dll/Tests/PlayerGroundSensorTests/[Tests][Tests.PlayerGroundSensorTests._02GroundedIsTrueWhenPlayerOnground]
+      name: _02GroundedIsTrueWhenPlayerOnground
+      fullName: Tests.PlayerGroundSensorTests._02GroundedIsTrueWhenPlayerOnground
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerGroundSensorTests][suite]
+    - id: 1033
+      uniqueId: Tests.dll/Tests/PlayerGroundSensorTests/[Tests][Tests.PlayerGroundSensorTests._03NonTDDLowestYValueForPlayerToBeSpawnedOnTheGround]
+      name: _03NonTDDLowestYValueForPlayerToBeSpawnedOnTheGround
+      fullName: Tests.PlayerGroundSensorTests._03NonTDDLowestYValueForPlayerToBeSpawnedOnTheGround
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerGroundSensorTests][suite]
+    - id: 1034
+      uniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestInAir][suite]
+      name: PlayerTestInAir
+      fullName: Tests.PlayerTestInAir
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1075
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1035
+      uniqueId: Tests.dll/Tests/PlayerTestInAir/[Tests][Tests.PlayerTestInAir.PlayerTestInAirSimplePasses]
+      name: PlayerTestInAirSimplePasses
+      fullName: Tests.PlayerTestInAir.PlayerTestInAirSimplePasses
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1034
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestInAir][suite]
+    - id: 1036
+      uniqueId: Tests.dll/Tests/PlayerTestInAir/[Tests][Tests.PlayerTestInAir.PlayerTestInAirWithEnumeratorPasses]
+      name: PlayerTestInAirWithEnumeratorPasses
+      fullName: Tests.PlayerTestInAir.PlayerTestInAirWithEnumeratorPasses
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1034
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestInAir][suite]
+    - id: 1037
+      uniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+      name: PlayerTestsWithSetUp
+      fullName: Tests.PlayerTestsWithSetUp
+      resultStatus: 1
+      duration: 0.2002183
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1075
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1038
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._01PlayerDoesNotMoveWithoutInput]
+      name: _01PlayerDoesNotMoveWithoutInput
+      fullName: Tests.PlayerTestsWithSetUp._01PlayerDoesNotMoveWithoutInput
+      resultStatus: 2
+      duration: 0.0792387
+      messages: "  Expected: 0.000920968829f\r\n  But was:  0.000914803648f\r\n"
+      output: "0.0009148036\r\n0.0009209688\r\n"
+      stacktrace: "at Tests.PlayerTestsWithSetUp+<_01PlayerDoesNotMoveWithoutInput>d__5.MoveNext
+        () [0x000ac] in D:\\FYP\\New Unity Project\\Assets\\Tests\\PlayModeTests\\PlayerTests.cs:49\r\nat
+        UnityEngine.TestTools.TestEnumerator+<Execute>c__Iterator0.MoveNext () [0x0004b]
+        in C:\\buildslave\\unity\\build\\Extensions\\TestRunner\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31\r\n"
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1039
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._02PlayerMoveRight]
+      name: _02PlayerMoveRight
+      fullName: Tests.PlayerTestsWithSetUp._02PlayerMoveRight
+      resultStatus: 1
+      duration: 0.1759906
+      messages: 
+      output: "0\r\n0\r\n0\r\n0\r\n0\r\n0\r\n0\r\n0\r\n0\r\n2.538998E-05\r\n2.538998E-05\r\n2.538998E-05\r\n2.538998E-05\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1040
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._03PlayerMoveLeft]
+      name: _03PlayerMoveLeft
+      fullName: Tests.PlayerTestsWithSetUp._03PlayerMoveLeft
+      resultStatus: 1
+      duration: 0.170259
+      messages: 
+      output: "0\r\n-0.07843137\r\n-0.07843137\r\n-0.07843137\r\n-0.07843137\r\n-0.07843137\r\n-0.07841492\r\n-0.07841492\r\n-0.07841492\r\n-0.07841492\r\n-0.07841492\r\n0\r\n0\r\n"
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1041
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._04PlayerLookDirection]
+      name: _04PlayerLookDirection
+      fullName: Tests.PlayerTestsWithSetUp._04PlayerLookDirection
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1042
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._05Jumping]
+      name: _05Jumping
+      fullName: Tests.PlayerTestsWithSetUp._05Jumping
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1043
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._06PlayerAttAnimationGround]
+      name: _06PlayerAttAnimationGround
+      fullName: Tests.PlayerTestsWithSetUp._06PlayerAttAnimationGround
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1044
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._07PlayerAttackMoveAlternates]
+      name: _07PlayerAttackMoveAlternates
+      fullName: Tests.PlayerTestsWithSetUp._07PlayerAttackMoveAlternates
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1046
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._08ArrowLaunchedWhenShooting]
+      name: _08ArrowLaunchedWhenShooting
+      fullName: Tests.PlayerTestsWithSetUp._08ArrowLaunchedWhenShooting
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1045
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._08ShootArrowAnimationPlays]
+      name: _08ShootArrowAnimationPlays
+      fullName: Tests.PlayerTestsWithSetUp._08ShootArrowAnimationPlays
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1047
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._09ArrowFiredAtTheCorrectDirectionRight]
+      name: _09ArrowFiredAtTheCorrectDirectionRight
+      fullName: Tests.PlayerTestsWithSetUp._09ArrowFiredAtTheCorrectDirectionRight
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1049
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._09PlayerSlowedWhenAttacking]
+      name: _09PlayerSlowedWhenAttacking
+      fullName: Tests.PlayerTestsWithSetUp._09PlayerSlowedWhenAttacking
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1048
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._10ArrowFiredAtTheCorrectDirectionLeft]
+      name: _10ArrowFiredAtTheCorrectDirectionLeft
+      fullName: Tests.PlayerTestsWithSetUp._10ArrowFiredAtTheCorrectDirectionLeft
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1050
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._10PlayerCannotNormalAttackWhenInAir]
+      name: _10PlayerCannotNormalAttackWhenInAir
+      fullName: Tests.PlayerTestsWithSetUp._10PlayerCannotNormalAttackWhenInAir
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1051
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._10PlayerCannotShootArrowsWhenInAir]
+      name: _10PlayerCannotShootArrowsWhenInAir
+      fullName: Tests.PlayerTestsWithSetUp._10PlayerCannotShootArrowsWhenInAir
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1053
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._11PlayerSpeedLevelIncreasesOnPickingUpBoots]
+      name: _11PlayerSpeedLevelIncreasesOnPickingUpBoots
+      fullName: Tests.PlayerTestsWithSetUp._11PlayerSpeedLevelIncreasesOnPickingUpBoots
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1054
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._12PlayerMoveFasterWithSpeedLevel]
+      name: _12PlayerMoveFasterWithSpeedLevel
+      fullName: Tests.PlayerTestsWithSetUp._12PlayerMoveFasterWithSpeedLevel
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1055
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._13BootsDisappearingAfterPickup]
+      name: _13BootsDisappearingAfterPickup
+      fullName: Tests.PlayerTestsWithSetUp._13BootsDisappearingAfterPickup
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1056
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._14HurtAnimationPlaysWhenTakingDamage]
+      name: _14HurtAnimationPlaysWhenTakingDamage
+      fullName: Tests.PlayerTestsWithSetUp._14HurtAnimationPlaysWhenTakingDamage
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1058
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._14PlayerAttackingTrueWhenAttacking]
+      name: _14PlayerAttackingTrueWhenAttacking
+      fullName: Tests.PlayerTestsWithSetUp._14PlayerAttackingTrueWhenAttacking
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1061
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._14PlayerFallingAnimationWhenFallingDownInAir]
+      name: _14PlayerFallingAnimationWhenFallingDownInAir
+      fullName: Tests.PlayerTestsWithSetUp._14PlayerFallingAnimationWhenFallingDownInAir
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1059
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._14PlayerShootingTrueWhenShootingArrows]
+      name: _14PlayerShootingTrueWhenShootingArrows
+      fullName: Tests.PlayerTestsWithSetUp._14PlayerShootingTrueWhenShootingArrows
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1060
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._15PlayerLookDiectionLockedWhenInAction]
+      name: _15PlayerLookDiectionLockedWhenInAction
+      fullName: Tests.PlayerTestsWithSetUp._15PlayerLookDiectionLockedWhenInAction
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1057
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._15PlayerLookDiectionLockedWhenStaggered]
+      name: _15PlayerLookDiectionLockedWhenStaggered
+      fullName: Tests.PlayerTestsWithSetUp._15PlayerLookDiectionLockedWhenStaggered
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1063
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._20PlayerCastFireBall]
+      name: _20PlayerCastFireBall
+      fullName: Tests.PlayerTestsWithSetUp._20PlayerCastFireBall
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1062
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._20PlayerCastThunderBolt]
+      name: _20PlayerCastThunderBolt
+      fullName: Tests.PlayerTestsWithSetUp._20PlayerCastThunderBolt
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1066
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._99PlayerMoveLeft]
+      name: _99PlayerMoveLeft
+      fullName: Tests.PlayerTestsWithSetUp._99PlayerMoveLeft
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1065
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp._99PlayerMoveRight]
+      name: _99PlayerMoveRight
+      fullName: Tests.PlayerTestsWithSetUp._99PlayerMoveRight
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1064
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp.FlyingPunchMovesThePlayer]
+      name: FlyingPunchMovesThePlayer
+      fullName: Tests.PlayerTestsWithSetUp.FlyingPunchMovesThePlayer
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1052
+      uniqueId: Tests.dll/Tests/PlayerTestsWithSetUp/[Tests][Tests.PlayerTestsWithSetUp.PlayerAttGolemInGame]
+      name: PlayerAttGolemInGame
+      fullName: Tests.PlayerTestsWithSetUp.PlayerAttGolemInGame
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1037
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTestsWithSetUp][suite]
+    - id: 1067
+      uniqueId: Tests.dll/Tests/[Tests][Tests.ProjectileTest][suite]
+      name: ProjectileTest
+      fullName: Tests.ProjectileTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1075
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1070
+      uniqueId: Tests.dll/Tests/ProjectileTest/[Tests][Tests.ProjectileTest.ArrowFlyWithSpeed]
+      name: ArrowFlyWithSpeed
+      fullName: Tests.ProjectileTest.ArrowFlyWithSpeed
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1067
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ProjectileTest][suite]
+    - id: 1069
+      uniqueId: Tests.dll/Tests/ProjectileTest/[Tests][Tests.ProjectileTest.ArrowProduced]
+      name: ArrowProduced
+      fullName: Tests.ProjectileTest.ArrowProduced
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1067
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ProjectileTest][suite]
+    - id: 1068
+      uniqueId: Tests.dll/Tests/ProjectileTest/[Tests][Tests.ProjectileTest.ProjectileTestSimplePasses]
+      name: ProjectileTestSimplePasses
+      fullName: Tests.ProjectileTest.ProjectileTestSimplePasses
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1067
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.ProjectileTest][suite]
+    - id: 1071
+      uniqueId: Tests.dll/Tests/[Tests][Tests.UIHearthTest][suite]
+      name: UIHearthTest
+      fullName: Tests.UIHearthTest
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1075
+      parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1072
+      uniqueId: Tests.dll/Tests/UIHearthTest/[Tests][Tests.UIHearthTest.UIHearthTestSimplePasses]
+      name: UIHearthTestSimplePasses
+      fullName: Tests.UIHearthTest.UIHearthTestSimplePasses
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.UIHearthTest][suite]
+    - id: 1073
+      uniqueId: Tests.dll/Tests/UIHearthTest/[Tests][Tests.UIHearthTest.UIHearthTestWithEnumeratorPasses]
+      name: UIHearthTestWithEnumeratorPasses
+      fullName: Tests.UIHearthTest.UIHearthTestWithEnumeratorPasses
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1071
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.UIHearthTest][suite]
+    m_ResultText: "_01PlayerDoesNotMoveWithoutInput (0.079s)\n---\nExpected: 0.000920968829f\r\n
+      \ But was:  0.000914803648f\n---\nat Tests.PlayerTestsWithSetUp+<_01PlayerDoesNotMoveWithoutInput>d__5.MoveNext
+      () [0x000ac] in D:\\FYP\\New Unity Project\\Assets\\Tests\\PlayModeTests\\PlayerTests.cs:49\r\nat
+      UnityEngine.TestTools.TestEnumerator+<Execute>c__Iterator0.MoveNext () [0x0004b]
+      in C:\\buildslave\\unity\\build\\Extensions\\TestRunner\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31\n---\n0.0009148036\r\n0.0009209688"
+    m_ResultStacktrace: "at Tests.PlayerTestsWithSetUp+<_01PlayerDoesNotMoveWithoutInput>d__5.MoveNext
+      () [0x000ac] in D:\\FYP\\New Unity Project\\Assets\\Tests\\PlayModeTests\\PlayerTests.cs:49\r\nat
+      UnityEngine.TestTools.TestEnumerator+<Execute>c__Iterator0.MoveNext () [0x0004b]
+      in C:\\buildslave\\unity\\build\\Extensions\\TestRunner\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:31\r\n"
+    m_TestListState:
+      scrollPos: {x: 0, y: 611}
+      m_SelectedIDs: a7a468fc
+      m_LastClickedID: -60250969
+      m_ExpandedIDs: b40b22b8712a90c01a1b920fa7043c12c5cf1a2a8359db4128c00b429715ba4dd61e7d5cf7d4d269b7428f78ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -424,15 +1711,150 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 9}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
-    m_ExpandedScenes: []
-    m_CurrenRootInstanceID: 0
-    m_LockTracker:
-      m_IsLocked: 1
-    m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 83ed25b3e1f8766409e7e7fa40075761
---- !u!114 &15
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 16}
+    newResultList:
+    - id: 1077
+      uniqueId: '[New Unity Project][suite]'
+      name: New Unity Project
+      fullName: New Unity Project
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1081
+      uniqueId: '[D:/FYP/New Unity Project/Library/ScriptAssemblies/EditModeTests.dll][suite]'
+      name: EditModeTests.dll
+      fullName: D:/FYP/New Unity Project/Library/ScriptAssemblies/EditModeTests.dll
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1077
+      parentUniqueId: '[New Unity Project][suite]'
+    - id: 1082
+      uniqueId: EditModeTests.dll/[Tests][suite]
+      name: Tests
+      fullName: Tests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1081
+      parentUniqueId: '[D:/FYP/New Unity Project/Library/ScriptAssemblies/EditModeTests.dll][suite]'
+    - id: 1078
+      uniqueId: EditModeTests.dll/Tests/[EditModeTests][Tests.MockEnemyTests][suite]
+      name: MockEnemyTests
+      fullName: Tests.MockEnemyTests
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1082
+      parentUniqueId: EditModeTests.dll/[Tests][suite]
+    - id: 1079
+      uniqueId: EditModeTests.dll/Tests/MockEnemyTests/[EditModeTests][Tests.MockEnemyTests.MockEnemyTestsSimplePasses]
+      name: MockEnemyTestsSimplePasses
+      fullName: Tests.MockEnemyTests.MockEnemyTestsSimplePasses
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1078
+      parentUniqueId: EditModeTests.dll/Tests/[EditModeTests][Tests.MockEnemyTests][suite]
+    - id: 1080
+      uniqueId: EditModeTests.dll/Tests/MockEnemyTests/[EditModeTests][Tests.MockEnemyTests.MockEnemyTestsWithEnumeratorPasses]
+      name: MockEnemyTestsWithEnumeratorPasses
+      fullName: Tests.MockEnemyTests.MockEnemyTestsWithEnumeratorPasses
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1078
+      parentUniqueId: EditModeTests.dll/Tests/[EditModeTests][Tests.MockEnemyTests][suite]
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: a1ebddae84ec67c21cd8bb0f28c00b42ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -440,7 +1862,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -453,24 +1875,24 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 219.2
+    x: 202.40001
     y: 73.6
-    width: 1036
+    width: 1052
     height: 435
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
-  m_WindowGUID: 99ace3d9cd11db044a50042dba32b771
+  m_WindowGUID: 825cef45e4e2bb6468ba7822569896ee
   m_Gizmos: 1
-  m_SceneIsLit: 0
-  m_SceneLighting: 0
+  m_SceneIsLit: 1
+  m_SceneLighting: 1
   m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.840079, y: 12.848343, z: -0.77822405}
+    m_Target: {x: 6.051643, y: 4.033791, z: -9.58205}
     speed: 2
-    m_Value: {x: 3.7771697, y: 12.842322, z: -0.7393543}
+    m_Value: {x: 6.051643, y: 4.033791, z: -9.58205}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -479,11 +1901,11 @@ MonoBehaviour:
   m_ValidateTrueMetals: 0
   m_DoValidateTrueMetals: 0
   m_SceneViewState:
-    showFog: 0
+    showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 0
-    showFlares: 0
-    showImageEffects: 0
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
     showParticleSystems: 1
   grid:
     xGrid:
@@ -503,9 +1925,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.023147
+    m_Target: 17.735567
     speed: 2
-    m_Value: 8.63459
+    m_Value: 17.735567
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -530,7 +1952,143 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &16
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 202.40001
+    y: 73.6
+    width: 1052
+    height: 435
+  m_ViewDataDictionary: {fileID: 0}
+  m_VSyncEnabled: 0
+  m_MaximizeOnPlay: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_TargetDisplay: 0
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -526
+    m_HBaseRangeMax: 526
+    m_VBaseRangeMin: -209
+    m_VBaseRangeMax: 209
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 17
+      width: 1052
+      height: 418
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 526, y: 209}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -526
+      y: -209
+      width: 1052
+      height: 418
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_TargetTexture: {fileID: 0}
+  m_CurrentColorSpace: 0
+  m_LastWindowPixelSize: {x: 1315, y: 543.75}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 00000000000000000000
+  m_XRRenderMode: 0
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 73.6
+    width: 202
+    height: 435
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 864cfeffae4cfefff456feff225dfeff4a5dfeff9067feffc26dfeffee6dfeff4878feff7e7efeffaa7efefffc88feffc28efeffee8efeff4099feff069ffeff329ffeff84a9feff4aaffeff76affeffc8b9fefffebffeff2ac0feff7ccafeff42d0feff6ed0feffc0dafeff86e0feffb2e0feff04ebfeff3af1feff66f1feffb8fbfeff7e01ffffaa01fffffc0bffff3212ffff5e12ffffb01cffffe622ffff1223ffff642dffff9a33ffffc633ffff183effff4e44ffff7a44ffffcc4effff0255ffff2e55ffff805fffff9274ffffc274ffff127fffff5085ffff8085ffffd08fffff0c96ffff3c96ffff8ca0ffffeea6ffff1ea7ffff6eb1ffff58b8ffff88b8ffffd8c2ffff1cc9ffff4cc9ffff9cd3ffff6ad9ffff9ad9ffffeae3ffffb4e9ffffe4e9ffff36f4ffff8efbffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 13}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 1
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 83ed25b3e1f8766409e7e7fa40075761
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -551,9 +2109,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 219.2
+    x: 202.40001
     y: 73.6
-    width: 1036
+    width: 1052
     height: 435
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
@@ -572,6 +2130,8 @@ MonoBehaviour:
     - {fileID: 2903252300103017851, guid: ab2e8841c7b141b4483bd6f541f3b530, type: 2}
     - {fileID: 1905148099224120497, guid: 179c73d367744d044a808519a74beb79, type: 2}
     - {fileID: 1905148099224120497, guid: e9cda5540f557c84389acdca10123756, type: 2}
+    - {fileID: -651447495961094419, guid: a54be220bd82f5a4887f1e28f3b7fc7e, type: 2}
+    - {fileID: 2304216081576204187, guid: f68782ec18534034b94bc95f2e915c1b, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.43917525
       e01: 0
@@ -589,14 +2149,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.62673265
+    - e00: 0.55932754
       e01: 0
       e02: 0
-      e03: 21.267334
+      e03: 27.84578
       e10: 0
-      e11: 0.62673265
+      e11: 0.55932754
       e12: 0
-      e13: 209.40099
+      e13: 203.98761
       e20: 0
       e21: 0
       e22: 1
@@ -605,14 +2165,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.6326316
+    - e00: 0.54421055
       e01: 0
       e02: 0
-      e03: -16.631592
+      e03: -12.210541
       e10: 0
-      e11: 0.6326316
+      e11: 0.54421055
       e12: 0
-      e13: 161.37894
+      e13: 160.12631
       e20: 0
       e21: 0
       e22: 1
@@ -621,14 +2181,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.52678573
+    - e00: 0.56578946
       e01: 0
       e02: 0
-      e03: 57.142853
+      e03: 71.57895
       e10: 0
-      e11: 0.52678573
+      e11: 0.56578946
       e12: 0
-      e13: 105.94643
+      e13: 103.81579
       e20: 0
       e21: 0
       e22: 1
@@ -765,14 +2325,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.62673265
+    - e00: 0.6386139
       e01: 0
       e02: 0
-      e03: 21.267334
+      e03: 21.386139
       e10: 0
-      e11: 0.62673265
+      e11: 0.6386139
       e12: 0
-      e13: 209.40099
+      e13: 209.57921
       e20: 0
       e21: 0
       e22: 1
@@ -781,14 +2341,46 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.62673265
+    - e00: 0.5118812
       e01: 0
       e02: 0
-      e03: 21.267334
+      e03: 20.11882
       e10: 0
-      e11: 0.62673265
+      e11: 0.5118812
       e12: 0
-      e13: 209.40099
+      e13: 203.17822
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.6084906
+      e01: 0
+      e02: 0
+      e03: -15.42453
+      e10: 0
+      e11: 0.6084906
+      e12: 0
+      e13: 117.50405
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.8911951
+      e01: 0
+      e02: 0
+      e03: -9.986328
+      e10: 0
+      e11: 0.8911951
+      e12: 0
+      e13: 133.48984
       e20: 0
       e21: 0
       e22: 1
@@ -798,10 +2390,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: e9cda5540f557c84389acdca10123756,
+  m_AnimatorController: {fileID: 9100000, guid: 946844da6f391234b9146c117d090332,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 1905148099224120497, guid: e9cda5540f557c84389acdca10123756,
+  - m_Target: {fileID: 3594154267767860921, guid: 946844da6f391234b9146c117d090332,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -815,7 +2407,7 @@ MonoBehaviour:
   m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &17
+--- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -838,7 +2430,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 527.2
-    width: 1257
+    width: 1256
     height: 258
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -853,20 +2445,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Sprites/Player
   m_ViewMode: 1
   m_StartGridSize: 85
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Sprites/Player
   m_LastFoldersGridSize: 85
   m_LastProjectPath: D:\FYP\New Unity Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 278}
-    m_SelectedIDs: 8e2e0000
-    m_LastClickedID: 11918
-    m_ExpandedIDs: 000000000e2a0000622d0000bc2d00002c2e00002e2e0000f02e0000ac2f00005030000034310000a4340000c0340000c24e0000c44e000000ca9a3b
+    scrollPos: {x: 0, y: 638}
+    m_SelectedIDs: f2300000
+    m_LastClickedID: 12530
+    m_ExpandedIDs: 00000000142a0000922d0000ae2d0000f22d0000102e0000682e00006a2e0000d02e0000382f00004c300000f23000000231000010310000e43100005a35000076350000e4380000a63a000010500000125000001450000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -882,7 +2474,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 14}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -894,7 +2486,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 88fbffff
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000e2a0000622d0000bc2d00002c2e00002e2e0000f02e0000ac2f00005030000034310000a4340000c0340000c24e0000c44e0000
+    m_ExpandedIDs: 00000000142a0000922d0000ae2d0000f22d0000102e0000682e00006a2e0000d02e0000382f00004c300000f23000000231000010310000e431000076350000e4380000a63a0000105000001250000014500000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -910,7 +2502,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 14}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -922,7 +2514,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 880b000028330000a03600008a360000d20a0000e20900008a2a0000cc2a0000ce0c00008a0b0000700a000000000000b60b0000760a00001e0b00000a0b00008c0900004a0a0000880a0000ee2a0000280d0000040b00009c0b0000a00b0000a20b0000a80d0000480d0000080d0000a60f0000200f00005e0e00004e29000050290000b82d0000362f0000482f0000683a000010320000f2310000fe31000092460000b82a000032310000b6340000563200000c2a0000e0340000ba340000f2350000fc4400007a46000062460000524600005a4600006a4600006c2b00004c2f00008c390000b4390000a4390000d0320000d82f0000c62900001a2a0000a62d00004c2d000080340000743000007a2f0000ae2c0000f82b000010390000e2350000be2a00008c2e00007c350000d6370000b8370000383400008a2d00004234000054340000223d0000022c0000903800002c2e0000e8320000203500004a3e0000b0300000043f00001a3f0000fc320000c64400009e340000fe580000a63400005e470000704700004499010076f400006ef40000c82d0000363700005e5100005e580000642e000090510000d8320000023500000a3500000c350000c02d0000284f00003c350000b62a0000
+    m_ExpandedInstanceIDs: 880b000028330000a03600008a360000d20a0000e20900008a2a0000cc2a0000ce0c00008a0b0000700a000000000000b60b0000760a00001e0b00000a0b00008c0900004a0a0000880a0000ee2a0000280d0000040b00009c0b0000a00b0000a20b0000a80d0000480d0000080d0000a60f0000200f00005e0e00004e29000050290000b82d0000362f0000482f0000683a000010320000f2310000fe31000092460000b82a000032310000b6340000563200000c2a0000e0340000ba340000f2350000fc4400007a46000062460000524600005a4600006a4600006c2b00004c2f00008c390000b4390000a4390000d0320000d82f0000c62900001a2a0000a62d00004c2d000080340000743000007a2f0000ae2c0000f82b000010390000e2350000be2a00008c2e00007c350000d6370000b8370000383400008a2d00004234000054340000223d0000022c0000903800002c2e0000e8320000203500004a3e0000b0300000043f00001a3f0000fc320000c64400009e340000fe580000a63400005e470000704700004499010076f400006ef40000c82d0000363700005e5100005e580000642e000090510000d8320000023500000a3500000c350000c02d0000284f00003c350000b62a0000809d00005e4f0000cc2f0000d63a0000282a0000c6360000c029000092360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -938,7 +2530,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 14}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -946,10 +2538,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 27}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 85
   m_DirectoriesAreaWidth: 219
---- !u!114 &18
+--- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -970,9 +2562,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1256.8
+    x: 1256
     y: 73.6
-    width: 277
+    width: 278
     height: 712
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -985,7 +2577,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
---- !u!114 &19
+--- !u!114 &23
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1005,9 +2597,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1203.2001
+    x: 1256
     y: 73.6
-    width: 331
+    width: 278
     height: 712
   m_ViewDataDictionary: {fileID: 0}
   m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub

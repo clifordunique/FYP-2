@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 6615100207442825049}
   - component: {fileID: 8416759627410895798}
   - component: {fileID: 2673441027935372174}
+  - component: {fileID: 4400184}
+  - component: {fileID: 4400185}
   m_Layer: 10
   m_Name: Chest
-  m_TagString: Untagged
+  m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,3 +133,47 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7144325, y: 0.6828699}
   m_EdgeRadius: 0
+--- !u!50 &4400184
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615100207442825048}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!68 &4400185
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6615100207442825048}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.5, y: 0}
+  - {x: -0.34102535, y: -0.5197754}
+  - {x: 0.005484581, y: -0.4918995}
+  - {x: 0.39376163, y: -0.4878826}
+  - {x: 0.40417767, y: -0.08289337}
+  - {x: 0.38326454, y: 0.06526947}
+  - {x: -0.3674097, y: 0.12505913}

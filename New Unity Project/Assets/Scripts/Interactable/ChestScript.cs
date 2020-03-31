@@ -36,6 +36,7 @@ public class ChestScript : MonoBehaviour
     }
     public void WhenOpened()
     {
+       
         isOpen = true;
         spriteRenderer.sprite = openSprite;
         Invoke("Destroy", 2.0f);

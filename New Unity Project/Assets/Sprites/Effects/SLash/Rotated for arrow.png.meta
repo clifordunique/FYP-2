@@ -144,7 +144,7 @@ TextureImporter:
       name: Rotated for arrow_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 667
         y: 312
         width: 163
         height: 10
@@ -155,7 +155,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2a2083a7593c8043ad24fafaaab11d8
+      spriteID: f078cf946c113d84697f139253774848
       internalID: -5755443676137510699
       vertices: []
       indices: 
@@ -165,7 +165,7 @@ TextureImporter:
       name: Rotated for arrow_1
       rect:
         serializedVersion: 2
-        x: 459
+        x: 310
         y: 280
         width: 61
         height: 6
@@ -176,7 +176,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 674c897eee2ba3f428480acac2ffae57
+      spriteID: fb877e494845f9b42831cd71eaf363a8
       internalID: 7825219296913417403
       vertices: []
       indices: 
@@ -186,7 +186,7 @@ TextureImporter:
       name: Rotated for arrow_2
       rect:
         serializedVersion: 2
-        x: 289
+        x: 441
         y: 270
         width: 100
         height: 8
@@ -197,7 +197,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c13d3ae7d110a84d830e369aa99fca9
+      spriteID: af187509584df454b9e42778ab314430
       internalID: 513797640659439965
       vertices: []
       indices: 
@@ -207,7 +207,7 @@ TextureImporter:
       name: Rotated for arrow_3
       rect:
         serializedVersion: 2
-        x: 174
+        x: 613
         y: 263
         width: 43
         height: 5
@@ -218,7 +218,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90a0bb2f4d908e444828b3b7c793e309
+      spriteID: e0e5d81fc0a1ddd408fbe1743985dd16
       internalID: 3853745795346050221
       vertices: []
       indices: 
@@ -228,7 +228,7 @@ TextureImporter:
       name: Rotated for arrow_4
       rect:
         serializedVersion: 2
-        x: 509
+        x: 247
         y: 225
         width: 74
         height: 6
@@ -239,7 +239,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 443fc17b8fb499744a5bfbc15c9cf2aa
+      spriteID: 36a29d28d4786214f8d968224396b67d
       internalID: -7643760183094898296
       vertices: []
       indices: 
@@ -249,7 +249,7 @@ TextureImporter:
       name: Rotated for arrow_5
       rect:
         serializedVersion: 2
-        x: 352
+        x: 382
         y: 216
         width: 96
         height: 7
@@ -260,7 +260,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d15ce216a55c5f04ca668afe06746c84
+      spriteID: 88b755f326de2f5448d1f2fc430b4305
       internalID: -3316348124585932576
       vertices: []
       indices: 
@@ -270,7 +270,7 @@ TextureImporter:
       name: Rotated for arrow_6
       rect:
         serializedVersion: 2
-        x: 236
+        x: 556
         y: 209
         width: 38
         height: 4
@@ -281,7 +281,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d9099ce2f82c174a8d15a24952ab007
+      spriteID: 0cb6319a9b575f347bdddbc67ae2f483
       internalID: -3107321155140343448
       vertices: []
       indices: 
@@ -291,7 +291,7 @@ TextureImporter:
       name: Rotated for arrow_7
       rect:
         serializedVersion: 2
-        x: 561
+        x: 184
         y: 170
         width: 85
         height: 7
@@ -302,7 +302,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cab6640c495de3438256293f965fc71
+      spriteID: 9c09e2b78948a484fa889ae5e2433337
       internalID: 6897275002970405746
       vertices: []
       indices: 
@@ -312,7 +312,7 @@ TextureImporter:
       name: Rotated for arrow_8
       rect:
         serializedVersion: 2
-        x: 415
+        x: 326
         y: 162
         width: 89
         height: 7
@@ -323,7 +323,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d414d0cb42ead84e967cd6d06c297a7
+      spriteID: 0b804890ad0138f49b2b0c4abfcb559e
       internalID: -7298243539394055805
       vertices: []
       indices: 
@@ -333,7 +333,7 @@ TextureImporter:
       name: Rotated for arrow_9
       rect:
         serializedVersion: 2
-        x: 299
+        x: 496
         y: 155
         width: 35
         height: 4
@@ -344,7 +344,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1188458dbbc6c047ba9f7cb012b85cb
+      spriteID: 696072d1c052f214385472986623ec95
       internalID: -385089760820320528
       vertices: []
       indices: 
@@ -354,7 +354,7 @@ TextureImporter:
       name: Rotated for arrow_10
       rect:
         serializedVersion: 2
-        x: 612
+        x: 123
         y: 116
         width: 95
         height: 7
@@ -365,7 +365,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b76e0042c68c644da28816f155178ed
+      spriteID: 3651a092509e1e14bb8a85bdc6a2c140
       internalID: -8086896121645734991
       vertices: []
       indices: 
@@ -375,10 +375,10 @@ TextureImporter:
       name: Rotated for arrow_11
       rect:
         serializedVersion: 2
-        x: 473
-        y: 90
-        width: 92
-        height: 39
+        x: 269
+        y: 107
+        width: 83
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,7 +386,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bd533b5f3fa25f4dbd6708de27c08c5
+      spriteID: 8aaa112deb0ea05498f2b8092c11c34d
       internalID: -1980623542074064245
       vertices: []
       indices: 
@@ -396,7 +396,7 @@ TextureImporter:
       name: Rotated for arrow_12
       rect:
         serializedVersion: 2
-        x: 362
+        x: 441
         y: 101
         width: 27
         height: 4
@@ -407,7 +407,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c335bc0b55ea86145839f1294e056c18
+      spriteID: ddaa71958bd03d34e892044b0575529e
       internalID: 5736110421545653576
       vertices: []
       indices: 
@@ -417,7 +417,7 @@ TextureImporter:
       name: Rotated for arrow_13
       rect:
         serializedVersion: 2
-        x: 663
+        x: 60
         y: 61
         width: 107
         height: 8
@@ -428,7 +428,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f31f9104d5b1534fa6e0b11fed739e0
+      spriteID: 6e545ec79f4baa64a850b7f541c1204a
       internalID: 2733127327025553660
       vertices: []
       indices: 
@@ -438,7 +438,7 @@ TextureImporter:
       name: Rotated for arrow_14
       rect:
         serializedVersion: 2
-        x: 542
+        x: 213
         y: 53
         width: 75
         height: 6
@@ -449,7 +449,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac5eae7632712d248b5cebd391d1d0c6
+      spriteID: ee11af4dda6e8ad48820b4a2d70b63f3
       internalID: -5103583992509671893
       vertices: []
       indices: 
@@ -459,7 +459,7 @@ TextureImporter:
       name: Rotated for arrow_15
       rect:
         serializedVersion: 2
-        x: 425
+        x: 384
         y: 46
         width: 21
         height: 4
@@ -470,7 +470,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad686301277c7224f9465216130ef67c
+      spriteID: d90d200708e424d46b8d0759a934d05d
       internalID: 2333392098087402206
       vertices: []
       indices: 
@@ -480,28 +480,7 @@ TextureImporter:
       name: Rotated for arrow_16
       rect:
         serializedVersion: 2
-        x: 720
-        y: 6
-        width: 14
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc0020fba657f2f4a943e8a92a5b0187
-      internalID: -1806728624550918817
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rotated for arrow_17
-      rect:
-        serializedVersion: 2
-        x: 736
+        x: 0
         y: 7
         width: 94
         height: 7
@@ -512,7 +491,28 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c699da6b095f4da47888de8a90378ac3
+      spriteID: 7d43f7f24cc39e042a5b7934e371dd6d
+      internalID: -1806728624550918817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotated for arrow_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 6
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9cb0d2f80644b146ad9081fe493cc8c
       internalID: -3635751875142448877
       vertices: []
       indices: 
@@ -522,7 +522,7 @@ TextureImporter:
       name: Rotated for arrow_18
       rect:
         serializedVersion: 2
-        x: 605
+        x: 155
         y: 0
         width: 70
         height: 5
@@ -533,7 +533,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65538bdd3b7250b4891c6dabd9b79244
+      spriteID: 0dc55c3fec04738428a369af6c40560a
       internalID: -210254306018996325
       vertices: []
       indices: 

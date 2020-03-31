@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4140490486005234608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.24, y: -0.05, z: 0}
+  m_LocalPosition: {x: -0.094, y: -0.024, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3221351098651618501}
@@ -41,9 +41,9 @@ GameObject:
   - component: {fileID: 3221351098651618501}
   - component: {fileID: 6826329238301476145}
   - component: {fileID: 7478622415614811571}
-  - component: {fileID: 8944903170395196732}
   - component: {fileID: 939444584}
   - component: {fileID: 939444581}
+  - component: {fileID: 4166285235285216673}
   m_Layer: 12
   m_Name: Goblin
   m_TagString: Untagged
@@ -136,34 +136,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8944903170395196732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4304265415692318511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 457d2822d27374045b7019f826deeb10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 0
-  speed: 0
-  health: 0
-  canBeStaggered: 1
-  layerPlayer:
-    serializedVersion: 2
-    m_Bits: 8192
-  attackPos: {fileID: 1117538686851589474}
-  attacking: 0
-  staggered: 0
-  baseMockHealth: 15
-  baseMockDamage: 0
-  baseMockSpeed: 10
-  mockAttackRange: 0.5
-  mockAttackTime: 0
-  mockRange: 0.2
 --- !u!95 &939444584
 Animator:
   serializedVersion: 3
@@ -209,3 +181,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32779884, y: 0.74199677}
   m_EdgeRadius: 0
+--- !u!114 &4166285235285216673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4304265415692318511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b045fddfdaec1145b9cf83f5aad956c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  speed: 0
+  health: 0
+  canBeStaggered: 0
+  layerPlayer:
+    serializedVersion: 2
+    m_Bits: 0
+  attacking: 0
+  staggered: 0
+  baseHealth: 1
+  baseDamage: 1
+  baseSpeed: 7
+  baseAttackRange: 0.3
+  baseRange: 0.3
+  attackPos: {fileID: 1117538686851589474}
